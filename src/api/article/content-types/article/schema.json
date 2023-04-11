@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "articles",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
-    "displayName": "product"
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +12,13 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
     },
     "image": {
       "allowedTypes": [
