@@ -18,6 +18,18 @@
     "url": {
       "type": "string",
       "required": true
+    },
+    "taglineId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tagline.tagline",
+      "inversedBy": "links"
+    },
+    "aboutId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about.about",
+      "inversedBy": "links"
     }
   }
 }
